@@ -16,7 +16,7 @@ The docs are powered by [VitePress](https://vitepress.dev/). They are also viewa
 
 You can request changes by making a fork and opening a [pull request](https://github.com/qmk/qmk_firmware/pulls).
 
-### [Caleb's notes] COnfiguring, building and flashing the firmware file
+### [Caleb's notes] Configuring, building and flashing the firmware file
 1. Configure keymap on the official QMK configurator website, and download the keymap json file.
 2. Move the keymap json file to C://User/username/qmk_firmware.
 3. Open QMK MSYS, run `qmk json2c [filename]` to convert the json file to c format.
