@@ -17,7 +17,7 @@ The docs are powered by [VitePress](https://vitepress.dev/). They are also viewa
 You can request changes by making a fork and opening a [pull request](https://github.com/qmk/qmk_firmware/pulls).
 
 ## [Caleb's notes] Configuring, building and flashing the firmware file to an Keebio Iris rev5 keyboard
-1. Configure keymap on the [official QMK configurator website](https://config.qmk.fm/#/keebio/iris/rev5/LAYOUT), and download the keymap json file.
+1. Configure the keymap on the official [QMK configurator website](https://config.qmk.fm/#/keebio/iris/rev5/LAYOUT), and download the keymap json file.
 2. Move the keymap json file to C://User/username/qmk_firmware (Essentially the root of this repo).
 3. Open [QMK MSYS](https://github.com/qmk/qmk_distro_msys/tree/1.10.0) and navigate to the root of qmk_firmware, run `qmk json2c [filename]` to convert the json file to c format.
 4. Create a new folder in qmk_firmware/keyboards/keebio/iris/rev5/keymaps, and create a new keymap.c file with the c format generated from the previous step, and a rules.mk file with mouse keys enabled.
