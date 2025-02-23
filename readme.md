@@ -19,7 +19,7 @@ You can request changes by making a fork and opening a [pull request](https://gi
 ## [Caleb's notes] Configuring, building and flashing the firmware file to an Keebio Iris rev5 keyboard
 1. Configure keymap on the [official QMK configurator website](https://config.qmk.fm/#/keebio/iris/rev5/LAYOUT), and download the keymap json file.
 2. Move the keymap json file to C://User/username/qmk_firmware (Essentially the root of this repo).
-3. Open [QMK MSYS](https://config.qmk.fm/) and navigate to the root of qmk_firmware, run `qmk json2c [filename]` to convert the json file to c format.
+3. Open [QMK MSYS](https://github.com/qmk/qmk_distro_msys/tree/1.10.0) and navigate to the root of qmk_firmware, run `qmk json2c [filename]` to convert the json file to c format.
 4. Create a new folder in qmk_firmware/keyboards/keebio/iris/rev5/keymaps, and create a new keymap.c file with the c format generated from the previous step, and a rules.mk file with mouse keys enabled.
 5. From qmk_firmware, run `make keebio/iris/rev5:[keymap folder name]` to compile the .hex firmware file.
 6. Open the [QMK Toolbox](https://qmk.fm/toolbox) and connect the keyboard to the computer, hold the reset button on the connected side of split keyboard for 1 second before releasing, make sure the keyboard is connected to QMK Toolbox, then select the .hex firmware file and flash to the keyboard.
